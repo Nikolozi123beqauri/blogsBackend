@@ -1,23 +1,21 @@
-console.log("hello");
+// console.log("hello");
 
 
-
-const getUserFromDb = (username, onFoundCallcack) => {
-
-
-    setTimeout(() => {
-        onFoundCallcack({
-            username,
-            psss: "12345",
-            id:1
-        })
-
-    }, 3000);
-}
+// const getUserFromDb = (username, onFoundCallcack) => {
 
 
-getUserFromDb("giorgi", (foundUser) => {
-    if(foundUser.id === 1) {
-        console.log("firstUser");
-    }
-});
+//     setTimeout(() => {
+//         onFoundCallcack({
+//             username,
+//             psss: "12345",
+//             id:1
+//         })
+
+//     }, 3000);
+// }
+
+// getUserFromDb("giorgi", (foundUser) => {
+//     if(foundUser.id === 1) {
+//         console.log("firstUser");
+//     }
+// });
