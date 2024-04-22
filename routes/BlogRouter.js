@@ -4,7 +4,6 @@ const {
     updateBlogHandler,
     deleteBlogHandler,
     getAllBlogsHandler,
-    putBlogHandler,
     createBlogHandler,
     findBlogByAuthorHandler,
     filterByAuthorAndYearHandler,
@@ -24,7 +23,7 @@ blogRouter
 .get(getOneBlogHandler)
 .patch(updateBlogHandler)
 .delete(deleteBlogHandler)
-.put(putBlogHandler)
+
 
 
 
@@ -34,7 +33,7 @@ blogRouter
 
 
 blogRouter
-.route("/author/:year")
+.route("api/v1/author/:year")
 .get(filterByAuthorAndYearHandler)
 
 module.exports = blogRouter

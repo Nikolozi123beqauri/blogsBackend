@@ -1,6 +1,7 @@
 console.log("hello");
 
 
+
 const getUserFromDb = (username, onFoundCallcack) => {
 
 
@@ -14,8 +15,9 @@ const getUserFromDb = (username, onFoundCallcack) => {
     }, 3000);
 }
 
+
 getUserFromDb("giorgi", (foundUser) => {
     if(foundUser.id === 1) {
         console.log("firstUser");
     }
-});
+})
